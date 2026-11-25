@@ -93,7 +93,7 @@ A venda registra itens e reduz estoque. O caminho de finalização não envolve 
 - `relatorios.php` depende de `fpdf/fpdf.php` para PDF no servidor, mas a biblioteca não está versionada. Código de exportação no navegador também existe, sem resolver essa dependência.
 - `includes/config.php` usa nível administrativo numérico; `includes/auth.php` compara perfil textual. O comportamento depende do arquivo incluído pela página; revisar a duplicidade.
 - Há consultas montadas como texto SQL, sem suíte que comprove proteção uniforme contra injeção/CSRF.
-- O dump contém registros demonstrativos e hashes de autenticação. Não utilizar como contas de produção ou divulgar seus valores.
+- O dump contém registros de clientes/funcionários e hashes de autenticação. A origem e o caráter fictício dos dados não foram comprovados; trate-os como potencialmente pessoais até revisão. Não utilizar as contas em produção nem reproduzir seus valores.
 
 ## Ambiente, testes e evolução
 
